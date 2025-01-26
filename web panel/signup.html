@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Signup - Web Panel</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signup Page Of Web Panel - Page Turner">
+    <meta name="author" content="Muhammad Rafay">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/plugins/fontawesome/js/all.min.js"></script>
+    
+    <!-- App CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
+</head> 
+
+<body class="app app-login p-0">    	
+    <div class="row g-0 app-auth-wrapper">
+	    <div class="col-12 col-md-7 col-lg-6 auth-main-col text-center p-5">
+		    <div class="d-flex flex-column align-content-end">
+			    <div class="app-auth-body mx-auto">	
+					<h2 style="color: #631d04; margin-top: 25%;" class="auth-heading text-center mb-5"><b>Signup to Web Panel</b></h2>
+			        <div class="auth-form-container text-start">
+						<form class="auth-form signup-form" id="signup-form" method="POST" enctype="multipart/form-data" action="methods.php">
+							<input type="hidden" name="form_action" value="signup">
+							<!-- Name Input -->
+							<div class="mb-3">
+								<label class="sr-only" for="signup-name">Full Name</label>
+								<input id="signup-name" name="name" type="text" class="form-control" placeholder="Full Name" required="required">
+							</div>
+							
+							<!-- Email Input -->
+							<div class="mb-3">
+								<label class="sr-only" for="signup-email">Email</label>
+								<input id="signup-email" name="email" type="email" class="form-control" placeholder="Email Address" required="required">
+							</div>
+							
+							<!-- Password Input -->
+							<div class="mb-3">
+								<label class="sr-only" for="signup-password">Password</label>
+								<input id="signup-password" name="password" type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							
+							<!-- Image Upload -->
+							<div class="mb-3">
+								<label class="sr-only" for="signup-image">Profile Picture</label>
+								<input id="signup-image" name="image" type="file" class="form-control" accept="image/*">
+							</div>
+							
+							<!-- Submit Button -->
+							<div class="text-center">
+								<button type="submit" style="background-color: #631d04;" class="btn app-btn-primary w-100 theme-btn mx-auto">Sign Up</button>
+							</div>
+							
+							<!-- Link to Login -->
+							<div class="text-center mt-3">
+								<p class="small">Already have an account? <a href="login.html" class="text-primary">Login here</a></p>
+							</div>
+						</form>
+						
+                        <!-- Error Message -->
+                        <div id="error-message" style="display: none; color: red; margin-top: 10px;">Invalid email or password.</div>
+					</div><!--//auth-form-container-->	
+			    </div><!--//auth-body-->	
+		    </div><!--//flex-column-->   
+	    </div><!--//auth-main-col-->
+	    <div class="col-12 col-md-5 col-lg-6 h-100 auth-background-col">
+		    <div class="auth-background-holder">
+		    </div>
+		    <div class="auth-background-mask"></div>
+		    <div class="auth-background-overlay p-3 p-lg-5">
+			    <div class="d-flex flex-column align-content-end h-100">
+				    <div class="h-100"></div>
+				</div>
+		    </div><!--//auth-background-overlay-->
+	    </div><!--//auth-background-col-->
+    </div><!--//row-->
+
+</body>
+</html>

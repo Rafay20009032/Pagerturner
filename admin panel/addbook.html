@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Add Book - Admin Panel</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Add Book Page Of Admin Panel - Page Turner">
+    <meta name="author" content="Muhammad Rafay">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
+</head> 
+
+<body class="app app-reset-password p-0">    	
+    <div class="row g-0 app-auth-wrapper">
+	    <div class="col-12 col-md-7 col-lg-6 auth-main-col text-center p-5">
+		    <div class="d-flex flex-column align-content-end">
+			    <div class="app-auth-body mx-auto">	
+					<h2 style="color: #631d04;" class="auth-heading text-center mb-2"><b>Add Book</b></h2>
+			        <div class="auth-form-container text-start">
+						<form class="auth-form" action="methods.php" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" name="form_action" value="add_book">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Book Name</label>
+                                <input id="name" name="name" type="text" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Description</label>
+                                <textarea id="description" name="description" class="form-control"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="image" class="form-label">Book Cover Image</label>
+                                <input id="image" name="image" type="file" class="form-control" accept="image/*" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="book_pdf" class="form-label">Book PDF</label>
+                                <input id="book_pdf" name="book_pdf" type="file" class="form-control" accept="application/pdf" required>
+                            </div>
+                            <div class="text-center">
+								<button type="submit" style="background-color: #631d04;" class="btn app-btn-primary w-100">Submit</button>
+							</div>
+                        </form>
+                        
+					</div>	
+			    </div>	
+		    </div>   
+	    </div>
+	    <div class="col-12 col-md-5 col-lg-6 h-100 auth-background-col">
+		    <div class="auth-background-holder"></div>
+		    <div class="auth-background-mask"></div>
+		    <div class="auth-background-overlay p-3 p-lg-5">
+			    <div class="d-flex flex-column align-content-end h-100">
+				    <div class="h-100"></div>
+				</div>
+		    </div>
+	    </div>
+    </div>
+</body>
+</html>
