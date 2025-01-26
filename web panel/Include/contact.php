@@ -24,9 +24,9 @@
       <nav class="nav-links" id="nav-links">
         <a href="../index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
-        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="blog.php" class="nav-link">Blog</a>
         <a href="contact.php" class="nav-link">Contact</a>
-       
+        <a href="../login.html" class="nav-link">Logout</a>
       </nav>
     </div>
   </header>

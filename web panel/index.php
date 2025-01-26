@@ -66,7 +66,7 @@
         <a href="Include/about.html" class="nav-link">About Us</a>
         <a href="Include/blog.php" class="nav-link">Blog</a>
         <a href="Include/contact.php" class="nav-link">Contact</a>
-        <a href="logout.php" class="nav-link">Logout</a>
+        <a href="login.html" class="nav-link">Logout</a>
       </nav>
     </div>
   </header>
